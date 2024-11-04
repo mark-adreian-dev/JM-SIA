@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-slate-900">
+    <main class="w-screen h-screen relative p-9 overflow-x-hidden">
+        <!-- task 1 -->
+        <div class="w-full h-full mb-10">
+            <h1 class="text-lg font-bold text-white mb-5">Task 1: Integration Setup Using Message Channels</h1>
+            <div class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Email</span>
+                  </label>
+                  <input type="email" placeholder="email" class="input input-bordered email" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Password</span>
+                  </label>
+                  <input type="password" placeholder="password" class="input input-bordered password" required />
+                  <label class="label">
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary formSubmitBtn">Submit</button>
+                </div>
+              </div>
+        </div>
+
+        <!-- task 2 -->
+        <div class="w-full h-full mb-10">
+            <h1 class="text-lg font-bold text-white mb-5">Task 2: Implement Content-Based Routing </h1>
+            <div class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Email</span>
+                  </label>
+                  <input type="email" placeholder="email" class="input input-bordered email2" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Password</span>
+                  </label>
+                  <input type="password" placeholder="password" class="input input-bordered password2" required />
+                  <label class="label">
+                  </label>
+                </div>
+                <select class="select select-bordered w-full mb-4 region">
+                    <option disabled selected>Select Your Region</option>
+                    <option>local</option>
+                    <option>international</option>
+                </select> 
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary formSubmitBtn2">Submit</button>
+                </div>
+              </div>
+        </div>
+
+        <!-- task 3 -->
+        <div class="h-[calc(100%-4.50rem)] relative flex flex-col mb-28">
+            <h1 class="text-lg font-bold text-white mb-5">Task 3: Message Aggregator</h1>
+            <div class="flex flex-col w-full">
+                <div class="w-[calc(100%-4.50rem)] h-full p-6">
+                    <h1 class="text-lg font-bold text-white mb-5">Message 1</h1>
+                    <textarea class="textarea w-full h-40  mb-2 text-area-aggregator" placeholder="TextArea for message 1"></textarea>
+                    <button class="btn btn-success w-full aggregator-submit">Send Message 1</button>
+                </div>
+                <div class="w-[calc(100%-4.50rem)] h-full p-6">
+                    <h1 class="text-lg font-bold text-white mb-5">Message 2</h1>
+                    <textarea class="textarea w-full h-40 mb-2 text-area-aggregator" placeholder="TextArea for message 2"></textarea>
+                    <button class="btn btn-success w-full aggregator-submit">Send Message 2</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- task 4 -->
+        <div class="w-full h-full">
+            <h1 class="text-lg font-bold text-white mb-5">Task 4: Message Translator</h1>
+            <input type="file" class="file-input w-full mb-2 " />
+            <p class="text-slate-500 italic text-sm mb-6">Converting xml to json please insert valid xml data</p>
+            <div id="editor" class="w-full h-1/2 mb-7"></div>
+            
+            <p class="text-white mb-2">Reciepient: </p>
+            <select class="select select-bordered w-full mb-4">
+                <option disabled selected>Where to Send</option>
+                <option>Service_1</option>
+                <option>Service_2</option>
+                <option>Service_3</option>
+            </select>      
+            <button class="btn btn-success w-full submit">Send XML</button>
+        </div>
+    </main>
+   
+ 
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.36.3/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/fileReader.js"></script>
+    <script src="/js/messageAggregator.js"></script>
+    <script src="/js/registrationForm.js"></script>
+    <script src="/js/contentRouting.js"></script>
+    
+</body>
+</html>

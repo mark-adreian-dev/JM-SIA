@@ -1,0 +1,18 @@
+<Employee>
+    <EmployeeID>12345</EmployeeID>
+    <FirstName>John</FirstName>
+    <LastName>Doe</LastName>
+    <Position>Software Engineer</Position>
+    <Department>IT</Department>
+    <HireDate>2022-01-15</HireDate>
+    <Email>johndoe@example.com</Email>
+    <Phone>+1234567890</Phone>
+    <Salary>75000</Salary>
+    <Address>
+        <Street>123 Main St</Street>
+        <City>New York</City>
+        <State>NY</State>
+        <PostalCode>10001</PostalCode>
+        <Country>USA</Country>
+    </Address>
+</Employee>
